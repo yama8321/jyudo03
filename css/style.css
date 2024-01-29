@@ -1625,16 +1625,9 @@ img {
     font-size: 1.2rem;
   }
 }
-@media (max-width: 650px) {
-  #sec0201 #sec0202 .sec02HeadText h3 {
-    text-align: center;
-    width: 21rem;
-  }
-}
 @media (max-width: 500px) {
   #sec0201 #sec0202 .sec02HeadText h3 {
     font-size: 1rem;
-    width: 17rem;
   }
 }
 #sec0201 #sec0202 .sec02HeadText p {
@@ -1900,7 +1893,7 @@ body {
 @media (max-width: 800px) {
   #sec03 h2 {
     font-size: 1.5rem;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -1920,7 +1913,6 @@ body {
 @media (max-width: 500px) {
   #sec03 .sec03Line01 {
     width: 20rem;
-    padding-bottom: 2rem;
   }
 }
 #sec03 .sec03Line01 img {
@@ -2105,29 +2097,41 @@ body {
     margin: 3rem 2rem 2rem;
   }
 }
-.sec03contain03 h2::after {
-  content: "\\\\click//";
+.sec03contain03 .clickend {
   position: absolute;
-  top: -10px;
+  top: -45px;
   right: -100px;
   transform: rotate(35deg);
 }
+@media (max-width: 800px) {
+  .sec03contain03 .clickend {
+    top: -20px;
+    right: -80px;
+  }
+}
 @media (max-width: 550px) {
-  .sec03contain03 h2::after {
+  .sec03contain03 .clickend {
     right: -80px;
   }
 }
 @media (max-width: 500px) {
-  .sec03contain03 h2::after {
+  .sec03contain03 .clickend {
     right: -60px;
   }
 }
 @media (max-width: 400px) {
-  .sec03contain03 h2::after {
+  .sec03contain03 .clickend {
     right: -28px;
     top: -24px;
     transform: rotate(25deg);
   }
+}
+.sec03contain03 .sec03click {
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+.sec03contain03 h2 {
+  position: relative;
 }
 .sec03contain03 .sec03card {
   display: flex;
@@ -2169,7 +2173,7 @@ body {
   .sec03contain03 .sec03card {
     display: flex;
     flex-wrap: wrap;
-    margin: 2rem 1rem 2rem;
+    margin: 0 1rem;
   }
 }
 .sec03contain03 .sec03card a {

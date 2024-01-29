@@ -8,10 +8,10 @@
 
 
 const faceBani = document.querySelector('.sec01fbanime');
-function faceb(){
+function faceb() {
     const targetRect = faceBani.getBoundingClientRect();
     if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
-        faceBani.classList.add('sec01fbAni'); 
+        faceBani.classList.add('sec01fbAni');
     } else {
         faceBani.classList.remove('sec01fbAni');
     }
@@ -42,7 +42,7 @@ function fadeinn() {
         const targetRect = target.getBoundingClientRect();
         if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
             target.classList.add('fadeinn');
-        } 
+        }
         else {
             target.classList.remove('fadeinn');
         }
@@ -57,7 +57,7 @@ function fadeinn() {
         const targetRect = target.getBoundingClientRect();
         if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
             target.classList.add('fadeinn');
-        } 
+        }
         // else {
         //     target.classList.remove('fadeinn');
         // }
@@ -111,7 +111,7 @@ window.addEventListener('load', resizeFacebookPlugin);
 const swiper = new Swiper('.swiper01', {
     loop: true,
     effect: 'scroll',
-    speed:1500,
+    speed: 1500,
 
     // If we need pagination
     pagination: {
@@ -164,12 +164,36 @@ const swiper02 = new Swiper(".swiper02", {
 
 const handslide = document.querySelector('.sec04Hand');
 function handslideanime() {
-        const targetRect = handslide.getBoundingClientRect();
-        if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
-            handslide.classList.add('sec04Hand');
-        } else {
-            handslide.classList.remove('sec04Hand');
-        }
-    };
+    const targetRect = handslide.getBoundingClientRect();
+    if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
+        handslide.classList.add('sec04Hand');
+    } else {
+        handslide.classList.remove('sec04Hand');
+    }
+};
 
 window.addEventListener('scroll', handslideanime);
+
+
+
+
+
+
+
+
+
+
+const clickbaund = document.querySelector('.sec03click01');
+function handslideanime() {
+    const targetRect = clickbaund.getBoundingClientRect();
+    if (targetRect.top < window.innerHeight && targetRect.bottom >= 0) {
+        clickbaund.classList.add('sec03click');
+    } else {
+        clickbaund.classList.remove('sec03click');
+    }
+};
+
+window.addEventListener('scroll', handslideanime);
+
+
+
